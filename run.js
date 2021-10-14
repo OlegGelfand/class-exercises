@@ -9,7 +9,6 @@ var backPack = new Backpack_1.Backpack();
 var car = new Car_1.Car();
 var computer = new Computer_1.Computer();
 var person = new Person_1.Person();
-var bike1 = new Bike_1.Bike();
 backPack.setShoeWeight(1);
 backPack.setShirtWeight(3);
 backPack.setPantsWeight(2);

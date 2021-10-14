@@ -7,7 +7,7 @@ const backPack = new Backpack();
 const car =  new Car();
 const computer = new Computer();
 const person =  new Person();
-const bike1 = new Bike();
+
 
 backPack.setShoeWeight(1);
 backPack.setShirtWeight(3);
