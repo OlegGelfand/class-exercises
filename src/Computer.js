@@ -13,7 +13,7 @@ var Computer = /** @class */ (function () {
         console.log("test results show that this", this.cpu, "processor", startUpTimeSpeedTest, "seconds");
     };
     Computer.prototype.upGradeSpeed = function (speedIncrease) {
-        this.speed = speedIncrease + 20;
+        this.speed += speedIncrease;
         console.log("the computer speed is now", this.speed);
     };
     return Computer;

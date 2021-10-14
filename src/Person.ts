@@ -10,9 +10,8 @@ export class Person {
     }
 
     feedUntilFull(food:string) {
-        const gender = this.gender;
 
-        switch (gender) {
+        switch (this.gender) {
             case "f":
                 this.weight +=3;
                 break;
@@ -25,6 +24,6 @@ export class Person {
     }
 
     checkScale() {
-        console.log(this.name, 'weighs',this.weight,'grams');
+        console.log(this.name, 'weighs', this.weight, 'grams');
     }
 }

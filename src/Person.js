@@ -8,8 +8,7 @@ var Person = /** @class */ (function () {
         console.log(this.name, 'had', food, 'on Shabbos');
     };
     Person.prototype.feedUntilFull = function (food) {
-        var gender = this.gender;
-        switch (gender) {
+        switch (this.gender) {
             case "f":
                 this.weight += 3;
                 break;

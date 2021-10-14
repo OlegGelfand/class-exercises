@@ -13,7 +13,7 @@ export class Computer {
         console.log("test results show that this",this.cpu, "processor", startUpTimeSpeedTest, "seconds");
     }
     upGradeSpeed(speedIncrease:number) {
-        this.speed = speedIncrease + 20;
+        this.speed += speedIncrease;
         console.log("the computer speed is now",this.speed)
 
     }

@@ -12,15 +12,15 @@ export class Car {
        this.color = color;
     }
 
-    addSpare(numSpares:number) {
+    addSpare() {
         this.numSpares++;
     }
 
-    removeSpare(numSpares:number) {
-        this.numSpares--
+    removeSpare() {
+        this.numSpares--;
     }
 
-    cleanSeats(numSeats:number) {
+    cleanSeats() {
         console.log('seats are clean');
     }
 

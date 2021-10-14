@@ -7,13 +7,13 @@ var Car = /** @class */ (function () {
     Car.prototype.paint = function (color) {
         this.color = color;
     };
-    Car.prototype.addSpare = function (numSpares) {
+    Car.prototype.addSpare = function () {
         this.numSpares++;
     };
-    Car.prototype.removeSpare = function (numSpares) {
+    Car.prototype.removeSpare = function () {
         this.numSpares--;
     };
-    Car.prototype.cleanSeats = function (numSeats) {
+    Car.prototype.cleanSeats = function () {
         console.log('seats are clean');
     };
     Car.prototype.addSeats = function (numSeats) {
