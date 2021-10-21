@@ -2,14 +2,22 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Bike = void 0;
 var Bike = /** @class */ (function () {
-    function Bike() {
+    /**
+     *
+     * @param bikeDiameter measured in inches
+     */
+    function Bike(bikeDiameter) {
+        this.bikeDiameter = bikeDiameter;
     }
-    Bike.prototype.setBike1Properties = function (bike1Diameter) {
-        this.bike1Diameter = bike1Diameter;
+    Bike.prototype.setBikeProperties = function (bikeDiameter) {
+        this.bikeDiameter = bikeDiameter;
     };
-    Bike.prototype.getDistanceTraveled = function (bike1Dist) {
-        var bike1Distance = this.bike1Diameter * this.bike1Dist;
-        console.log("Bike1 traveled", bike1Distance, "feet.");
+    /**
+     * Returns distance in feet.
+     * @param numRotations
+     */
+    Bike.prototype.getDistanceTraveled = function (numRotations) {
+        return Math.round(this.bikeDiameter * Math.PI * numRotations / 12);
     };
     return Bike;
 }());

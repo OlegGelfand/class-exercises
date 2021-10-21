@@ -26,15 +26,13 @@ export class Basement {
     }
 
     addOutlets(numOutlets:number) {
-        const currentNumOutlets = this.numOutlets;
-        if (currentNumOutlets < this.numCircuits * this.maxOutletsPerCircuit && currentNumOutlets + numOutlets <= this.maxOutletsPerCircuit * this.numCircuits) {
+        const maxOutlets = this.maxOutletsPerCircuit * this.numCircuits;
+        if (this.numOutlets + numOutlets <= maxOutlets) {
             this.numOutlets += numOutlets;
-            console.log("you now have ", this.numOutlets, "installed")
-        }
-        else if (currentNumOutlets < this.numCircuits * this.maxOutletsPerCircuit && currentNumOutlets + numOutlets > this.maxOutletsPerCircuit * this.numCircuits) {
-            console.log("you are requesting to install ", numOutlets, " outlets, you have an ability to have a total of", this.maxOutletsPerCircuit * this.numCircuits, "and you currently have ", this.numOutlets, "outlets" )
+            console.log("you now have ", this.numOutlets, "installed");
         }
         else {
+            console.log("you are requesting to install ", numOutlets, " outlets, you have an ability to have a total of", maxOutlets, "and you currently have ", this.numOutlets, "outlets" );
             console.log("Circuits full!! Add another circuit prior to adding more outlets.");
         }
     }
