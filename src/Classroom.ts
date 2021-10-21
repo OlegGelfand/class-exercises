@@ -23,7 +23,6 @@ export class Classroom {
         // const numAssignedToday = this.classAssignments.filter(c => moment(c.startDate).isBetween(moment().startOf('day'), moment().endOf('day'))).length;
         for (const c of this.classAssignments) {
             const numAssignedToday = this.classAssignments.filter(c => moment(c.startDate).isBetween(moment().startOf('day'), moment().endOf('day'))).length;
-            console.log(numAssignedToday);
             if(numAssignedToday <= MAX_ASSIGNMENTS) {
                 return true;
             }
