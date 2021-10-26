@@ -3,21 +3,34 @@ import {Car} from "./src/Car"
 import {Computer} from "./src/Computer";
 import {Person} from "./src/Person";
 import {Bike} from "./src/Bike";
-import {Teacher} from "./src/Teacher";
-import {Subjects} from "./src/Subjects.enum";
+import {Classroom} from "./src/Classroom";
+import {Monitor} from "./src/Monitor";
+import {Options} from "./src/Options.enum";
 
-const backPack = new Backpack();
-const car =  new Car();
-const computer = new Computer();
-const person =  new Person();
-const teacher = new Teacher();
 
-teacher.studentName = "Bobby";
-// teacher.addAssignment()
-teacher.getTotalAssignments()
-// teacher.addAssignment()
-const subject = teacher.setAssignment('Math');
-console.log(subject);
+
+// const backPack = new Backpack();
+// const car =  new Car();
+// const computer = new Computer();
+// const person =  new Person();
+// const classroom = new Classroom();
+const monitor =  new Monitor();
+
+monitor.setHeight(10);
+monitor.setWidth(16);
+const brandName = Options[0];
+
+
+// console.log('opt', brandName)
+monitor.setPixelHeight(1080);
+monitor.setPixelWidth(1920);
+monitor.getScreenSize();
+monitor.getAspectRatio();
+monitor.getTotalPixels()
+
+
+
+
 
 
 

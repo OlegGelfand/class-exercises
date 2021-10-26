@@ -1,21 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Backpack_1 = require("./src/Backpack");
-var Car_1 = require("./src/Car");
-var Computer_1 = require("./src/Computer");
-var Person_1 = require("./src/Person");
-var Teacher_1 = require("./src/Teacher");
-var backPack = new Backpack_1.Backpack();
-var car = new Car_1.Car();
-var computer = new Computer_1.Computer();
-var person = new Person_1.Person();
-var teacher = new Teacher_1.Teacher();
-teacher.studentName = "Bobby";
-// teacher.addAssignment()
-teacher.getTotalAssignments();
-// teacher.addAssignment()
-var subject = teacher.setAssignment('Math');
-console.log(subject);
+var Monitor_1 = require("./src/Monitor");
+var Options_enum_1 = require("./src/Options.enum");
+// const backPack = new Backpack();
+// const car =  new Car();
+// const computer = new Computer();
+// const person =  new Person();
+// const classroom = new Classroom();
+var monitor = new Monitor_1.Monitor();
+monitor.setHeight(10);
+monitor.setWidth(16);
+var brandName = Options_enum_1.Options[0];
+// console.log('opt', brandName)
+monitor.setPixelHeight(1080);
+monitor.setPixelWidth(1920);
+monitor.getScreenSize();
+monitor.getAspectRatio();
+monitor.getTotalPixels();
 // backPack.setShoeWeight(1);
 // backPack.setShirtWeight(3);
 // backPack.setPantsWeight(2);
